@@ -20,15 +20,3 @@ def check_keys(user_password, login):
   else:
     print("Неправильный логин")
     return False
-
-def console(login, access):
-  if access:
-    print(f"Добро пожаловать в консоль {login}")
-  else:
-    print("///")
-
-def main():
-  login = int_user_login()
-  password = int_password(login)
-  access = check_keys(password, login)
-  console(login, access)
